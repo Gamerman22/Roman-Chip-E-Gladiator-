@@ -11,9 +11,9 @@ int pos;         // variable to store the servo position
 
 void setup()
 {
-  myServo.attach(10);      // attaches the servo on pin 9 to the servo object 
+  myServo.attach(10);      // attaches the servo on pin 10 to the servo object 
   pos = 90;               // start at midpoint 90 degrees
-  speed = 5;              // servo moves 3 degrees each time left/right is pushed
+  speed = 3;              // servo moves 3 degrees each time left/right is pushed
   myServo.write(pos);     // Set initial position
   
  Serial.begin(115200);
